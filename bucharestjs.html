@@ -1,0 +1,19 @@
+<head>
+  <title>bucharestjs on React!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	{{> header title="The Button" }}
+
+	{{> timer }}
+	{{> thebutton }}
+	{{> leaders }}
+</body>
+
+<template name="header">
+  <div class="header">
+    <h1>{{ title }}</h1>
+    {{> loginButtons align="right"}}
+  </div>
+</template>
