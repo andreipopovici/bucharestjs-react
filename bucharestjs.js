@@ -1,13 +1,13 @@
-Timer = new Mongo.Collection("timer");
-var TIMER_VALUE = 30 * 1000;
-
-Clicks = new Mongo.Collection("clicks");
-
 if(Meteor.isClient){
   Accounts.ui.config({
     passwordSignupFields: 'USERNAME_ONLY'
   });
 }
+
+Timer = new Mongo.Collection("timer");
+var TIMER_VALUE = 30 * 1000;
+
+Clicks = new Mongo.Collection("clicks");
 
 if(Meteor.isServer){
   Meteor.startup(function(){
