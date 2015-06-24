@@ -5,7 +5,7 @@ if(Meteor.isClient){
 }
 
 Timer = new Mongo.Collection("timer");
-var TIMER_VALUE = 30 * 1000;
+TIMER_VALUE = 30 * 1000;
 
 Clicks = new Mongo.Collection("clicks");
 

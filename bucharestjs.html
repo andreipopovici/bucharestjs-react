@@ -14,6 +14,8 @@
 <template name="header">
   <div class="header">
     <h1>{{ title }}</h1>
-    {{> loginButtons align="right"}}
+    {{ #unless currentUser }}
+      {{> loginButtons align="right"}}
+    {{/unless}}
   </div>
 </template>
